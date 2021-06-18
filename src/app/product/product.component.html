@@ -1,0 +1,7 @@
+<p>Lista de productos</p>
+<ul>
+    <li *ngFor="let user of users">
+        Nombre: {{ user.name }}
+        <span *ngIf="user.city.length > 0"> Ciudad: {{ user.city }}</span>
+    </li>
+</ul>
